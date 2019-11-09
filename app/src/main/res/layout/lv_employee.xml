@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/ic_launcher"
+        android:minWidth="140dp"
+        android:minHeight="140dp"
+        android:paddingRight="8dp"/>
+
+    <TextView
+        android:id="@+id/tvEmployeeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAMA"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:id="@+id/tvEmployeeNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIP"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmployeeName"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/tvEmployeeAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmployeeNumber"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/tvEmployeeGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GEN"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmployeeAddress"
+        android:textSize="24sp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
