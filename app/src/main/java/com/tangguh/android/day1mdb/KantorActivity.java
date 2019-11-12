@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -81,4 +82,5 @@ public class KantorActivity extends AppCompatActivity {
             Toast.makeText(KantorActivity.this, "Koneksi Gagal4 !",Toast.LENGTH_LONG).show();
         }
     }
+
 }

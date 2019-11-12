@@ -73,7 +73,7 @@ public class ListAdapter extends BaseAdapter {
 //                    TextView tv_desc = vi.findViewById(R.id.tv_desc);
 
                     HashMap<String,String> empList = new HashMap<String, String>();
-                    empList = data.get(0);
+                    empList = data.get(position);
 
                     tv_name.setText(empList.get("office_name"));
                     tv_email.setText(empList.get("email"));
